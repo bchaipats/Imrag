@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "imrag"
+version = "0.1.0"
+description = "An image question answering sytem using RAG and LLM."
+authors = ["Chaipat Suwannapoom <bchaipats@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+pandas = "^2.1.2"
+langchain = "^0.0.332"
+matplotlib = "^3.8.1"
+python-dotenv = "^1.0.0"
+ray = "^2.8.0"
+typer = "^0.9.0"
+asyncpg = "^0.29.0"
+pgvector = "^0.2.3"
+psycopg = {extras = ["binary", "pool"], version = "^3.1.12"}
+psycopg2-binary = "^2.9.9"
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.23"}
+black = {extras = ["jupyter"], version = "^23.11.0"}
+flake8 = "^6.1.0"
+flake8-pyproject = "^1.2.3"
+isort = "^5.12.0"
+jupyterlab = "^4.0.8"
+pyarrow = "^14.0.1"
+grpcio = "^1.59.2"
+python-doctr = "^0.7.0"
+sentence-transformers = "^2.2.2"
+openai = "0.28"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
